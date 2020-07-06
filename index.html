@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <style>
+            nav badge {
+                position: relative;
+                top: 10px;
+                right: 10px;
+            }
+
+            .row>div {
+                padding: 10px;
+                /* background: rgb(173, 173, 173); */
+                border: solid 10px white;
+                /* line-height: 50px; */
+            }
+
+            .row {
+                margin: 40px auto;
+            }
+
+            /* .img-responsive {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            } */
+        </style>
+
+        <title>Materialize - Cards</title>
+    </head>
+
+    <body>
+        <nav class="nav-wraper white">
+            <div class="container">
+                <a href="#" class="brand-logo black-text">Wine-And-Dine</a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right black-text hide-on-med-and-down">
+                    <li>
+                        <a href="#" class="black-text">Welcome</a>
+                    </li>
+                    <li>
+                        <a href="#" class="black-text">Wine Recommendation</a>
+                    </li>
+                    <li>
+                        <a href="#" class="black-text">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn-floating black z-depth-0">
+                            <i class="material-icons">notifications</i>
+                        </a>
+                    </li>
+                    <li>
+                        <span class="badge black-text"></span>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav black-text" id="mobile-links">
+            <li>
+                <a href="#" class="black-text">Welcome</a>
+            </li>
+            <li>
+                <a href="#" class="black-text">Wine Recommendation</a>
+            </li>
+            <li>
+                <a href="#" class="black-text">Contact</a>
+            </li>
+
+        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12">
+                    <img id="imgId1" class="responsive-img" src="./assets/images/wine1.jpg" alt="" /></div>
+                <div class="col s12 m6">
+                    <img id="imgId2" class="responsive-img" src="./assets/images/wine1.jpg" alt="" /></div>
+                <div class="col s12 m6">
+                    <img id="imgId3" class="responsive-img" src="./assets/images/wine1.jpg" alt="" /></div>
+                <div class="col s12 m6">
+                    <img id="imgId4" class="responsive-img" src="./assets/images/wine1.jpg" alt="" /></div>
+                <div class="col s12 m6">
+                    <img id="imgId5" class="responsive-img" src="./assets/images/wine1.jpg" alt="" /></div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
+        </script>
+        <!-- add script at the bottom of the body -->
+        <script src="./assets/js/wine-unsplash.js"></script>
+    </body>
+
+</html>
